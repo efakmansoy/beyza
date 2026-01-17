@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEYZA - TÜBİTAK RAG Asistan</title>
+    <meta name="description" content="TÜBİTAK 2204 Yarışmaları için yapay zeka destekli proje asistanı">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">BEYZA</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active">Ana Sayfa</a>
+                <a href="#features" class="nav-link">Özellikler</a>
+                <a href="#technology" class="nav-link">Teknoloji</a>
+                <a href="#demo" class="nav-link">Demo</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Yapay Zeka ile Proje Geliştirme
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">TÜBİTAK 2204</span><br>
+                Yarışmaları Yapay Zeka Asistanı
+            </h1>
+            <p class="hero-subtitle">
+                <strong>BEYZA</strong> (Bilimsel Etkinlikler Yapay Zeka Asistanı), 
+                TÜBİTAK 2204 yarışmalarında öğrencilere rehberlik eden, literatür tarayan 
+                ve profesyonel raporlar hazırlayan akıllı asistanınız.
+            </p>
+            <div class="hero-buttons">
+                <a href="#demo" class="btn btn-primary">
+                    <span>Demo'yu İzle</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <span>Özellikleri Keşfet</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="130">0</div>
+                    <div class="stat-label">Milyon+ Makale</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Proje Aşaması</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="11">0</div>
+                    <div class="stat-label">Rapor Bölümü</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">💡</div>
+                <div class="card-text">Fikir Geliştirme</div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">📚</div>
+                <div class="card-text">Literatür Tarama</div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">🔬</div>
+                <div class="card-text">Deney & Uygulama</div>
+            </div>
+            <div class="floating-card card-4">
+                <div class="card-icon">📝</div>
+                <div class="card-text">Rapor Yazımı</div>
+            </div>
+            <div class="hero-main-visual">
+                <div class="visual-glow"></div>
+                <div class="visual-content">
+                    <div class="ai-brain">
+                        <div class="brain-core"></div>
+                        <div class="brain-ring ring-1"></div>
+                        <div class="brain-ring ring-2"></div>
+                        <div class="brain-ring ring-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <span class="section-badge">Özellikler</span>
+            <h2 class="section-title">Güçlü ve <span class="gradient-text">Akıllı</span> Sistem</h2>
+            <p class="section-subtitle">BEYZA, modern yapay zeka teknolojileri ile donatılmış kapsamlı bir asistan</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-delay="0">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L25 15H35L27.5 21.5L30 32L20 25L10 32L12.5 21.5L5 15H15L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">RAG Sistemi</h3>
+                <p class="feature-description">
+                    Retrieval-Augmented Generation teknolojisi ile akıllı bilgi erişimi. 
+                    ChromaDB vektör veritabanı ve Türkçe BERT modeli.
+                </p>
+                <ul class="feature-list">
+                    <li>Semantik arama</li>
+                    <li>Kaynak takibi</li>
+                    <li>Streaming yanıt</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-delay="100">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M8 12H32M8 20H32M8 28H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">5 Aşamalı Takip</h3>
+                <p class="feature-description">
+                    Proje sürecinizi adım adım takip edin. Fikir geliştirmeden 
+                    raporlamaya kadar her aşamada özel rehberlik.
+                </p>
+                <ul class="feature-list">
+                    <li>Otomatik aşama tespiti</li>
+                    <li>Akıllı öneriler</li>
+                    <li>İlerleme takibi</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-delay="200">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M12 8V32M12 8C12 6.89543 12.8954 6 14 6H26C27.1046 6 28 6.89543 28 8M12 8H8C6.89543 8 6 8.89543 6 10V30C6 31.1046 6.89543 32 8 32H12M28 32V8M28 32H32C33.1046 32 34 31.1046 34 30V10C34 8.89543 33.1046 8 32 8H28" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Literatür Tarama</h3>
+                <p class="feature-description">
+                    Crossref API ile 130+ milyon akademik makaleye erişim. 
+                    Otomatik APA7 formatında kaynak oluşturma.
+                </p>
+                <ul class="feature-list">
+                    <li>DOI/URL'den kaynak</li>
+                    <li>Alfabetik sıralama</li>
+                    <li>Atıf yöneticisi</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-delay="300">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M10 8H30V32H10V8ZM16 14H24M16 20H24M16 26H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Rapor Yazma</h3>
+                <p class="feature-description">
+                    11 bölümlü profesyonel rapor şablonu. Resim, tablo ekleme 
+                    ve DOCX/PDF dışa aktarım desteği.
+                </p>
+                <ul class="feature-list">
+                    <li>Zengin metin editörü</li>
+                    <li>Görsel içerik</li>
+                    <li>Otomatik kayıt</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-delay="400">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 28C24.4183 28 28 24.4183 28 20C28 15.5817 24.4183 12 20 12C15.5817 12 12 15.5817 12 20C12 24.4183 15.5817 28 20 28Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 16V20L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Multimodal Değerlendirme</h3>
+                <p class="feature-description">
+                    Gemini Vision API ile görsel içerik analizi. 
+                    Resim ve tabloları da değerlendirmeye dahil eder.
+                </p>
+                <ul class="feature-list">
+                    <li>Few-shot learning</li>
+                    <li>Görsel analiz</li>
+                    <li>Detaylı geri bildirim</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-delay="500">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 8V20M20 20L28 28M20 20L12 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Gerçek Zamanlı İletişim</h3>
+                <p class="feature-description">
+                    Socket.IO teknolojisi ile anlık mesajlaşma ve streaming 
+                    yanıtlar. Tüm güncellemeler gerçek zamanlı olarak iletilir.
+                </p>
+                <ul class="feature-list">
+                    <li>Anlık mesajlaşma</li>
+                    <li>Canlı güncellemeler</li>
+                    <li>Oturum yönetimi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="technology" class="technology">
+        <div class="section-header">
+            <span class="section-badge">Teknoloji</span>
+            <h2 class="section-title">Güçlü <span class="gradient-text">Altyapı</span></h2>
+            <p class="section-subtitle">Modern ve kanıtlanmış teknolojiler üzerine inşa edildi</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-category">
+                <h3 class="tech-category-title">🧠 AI & ML</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <span class="tech-name">Google Gemini 2.5</span>
+                        <span class="tech-desc">Dil Modeli</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">LangChain</span>
+                        <span class="tech-desc">RAG Framework</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">ChromaDB</span>
+                        <span class="tech-desc">Vektör DB</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Sentence Transformers</span>
+                        <span class="tech-desc">Embedding</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3 class="tech-category-title">⚙️ Backend</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <span class="tech-name">Flask</span>
+                        <span class="tech-desc">Web Framework</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Socket.IO</span>
+                        <span class="tech-desc">Real-time</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">SQLite</span>
+                        <span class="tech-desc">Database</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">PyTorch</span>
+                        <span class="tech-desc">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3 class="tech-category-title">🔧 Araçlar</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <span class="tech-name">Crossref API</span>
+                        <span class="tech-desc">Akademik DB</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">BeautifulSoup</span>
+                        <span class="tech-desc">Web Scraping</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">python-docx</span>
+                        <span class="tech-desc">Export</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Jinja2</span>
+                        <span class="tech-desc">Templates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tech-architecture">
+            <h3 class="architecture-title">Sistem Mimarisi</h3>
+            <div class="architecture-flow">
+                <div class="flow-step">
+                    <div class="flow-icon">👤</div>
+                    <div class="flow-label">Kullanıcı</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">🌐</div>
+                    <div class="flow-label">Flask API</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">🔍</div>
+                    <div class="flow-label">RAG System</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">🗄️</div>
+                    <div class="flow-label">Vector DB</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">🤖</div>
+                    <div class="flow-label">Gemini AI</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">💬</div>
+                    <div class="flow-label">Yanıt</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="section-header">
+            <span class="section-badge">Demo</span>
+            <h2 class="section-title">Nasıl <span class="gradient-text">Çalışır?</span></h2>
+            <p class="section-subtitle">BEYZA'yı yakından tanıyın</p>
+        </div>
+        <div class="demo-container">
+            <div class="demo-chat">
+                <div class="chat-header">
+                    <div class="chat-status">
+                        <span class="status-dot"></span>
+                        BEYZA - Etkileşimli Demo (Örnek Görünüm)
+                    </div>
+                    <div class="chat-actions">
+                        <button class="chat-btn">⚙️</button>
+                        <button class="chat-btn">➕</button>
+                    </div>
+                </div>
+                <div class="chat-messages" id="demoMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>Merhaba! Ben BEYZA, TÜBİTAK 2204-A projeniz için yapay zeka asistanınızım. Size nasıl yardımcı olabilirim?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <button class="visualize-btn" id="visualizeBtn" title="RAG Sistemini Görselleştir">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 3L13 7H17L13 11L15 17L10 13L5 17L7 11L3 7H7L10 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                        <span>RAG İşlemini Görselleştir</span>
+                    </button>
+                    <input type="text" placeholder="Mesajınızı yazın..." id="demoInput">
+                    <button class="send-btn" id="demoSend">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 10L18 2L10 18L8 11L2 10Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="demo-features-list">
+                <div class="demo-feature-item">
+                    <div class="demo-feature-icon">💡</div>
+                    <div class="demo-feature-content">
+                        <h4>Fikir Geliştirme</h4>
+                        <p>Proje fikrinizi şekillendirmek için sorular sorun</p>
+                    </div>
+                </div>
+                <div class="demo-feature-item">
+                    <div class="demo-feature-icon">📚</div>
+                    <div class="demo-feature-content">
+                        <h4>Literatür Araştırması</h4>
+                        <p>130M+ akademik makaleden ilgili kaynakları bulun</p>
+                    </div>
+                </div>
+                <div class="demo-feature-item">
+                    <div class="demo-feature-icon">📝</div>
+                    <div class="demo-feature-content">
+                        <h4>Rapor Yazımı</h4>
+                        <p>11 bölümlü profesyonel rapor hazırlayın</p>
+                    </div>
+                </div>
+                <div class="demo-feature-item">
+                    <div class="demo-feature-icon">🎯</div>
+                    <div class="demo-feature-content">
+                        <h4>Değerlendirme</h4>
+                        <p>Projenizi puanlayın ve geri bildirim alın</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 class="contact-title">Projenizi Bir Sonraki Seviyeye Taşıyın</h2>
+            <p class="contact-subtitle">
+                BEYZA ile TÜBİTAK 2204 yarışmalarında başarılı olun. 
+                Yapay zeka destekli asistanınız ile profesyonel sonuçlar elde edin.
+            </p>
+            <div class="contact-buttons">
+                <a href="#demo" class="btn btn-primary btn-large">
+                    <span>Demo'yu Deneyin</span>
+                </a>
+                <a href="#features" class="btn btn-secondary btn-large">
+                    <span>Özellikleri Keşfet</span>
+                </a>
+            </div>
+            <div class="contact-stats">
+                <div class="contact-stat">
+                    <div class="stat-icon">🤖</div>
+                    <div class="stat-text">Yapay Zeka Destekli</div>
+                </div>
+                <div class="contact-stat">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-text">130M+ Akademik Makale</div>
+                </div>
+                <div class="contact-stat">
+                    <div class="stat-icon">📝</div>
+                    <div class="stat-text">Profesyonel Raporlama</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">BEYZA</span>
+                </div>
+                <p class="footer-desc">
+                    Bilimsel Etkinlikler Yapay Zeka Asistanı<br>
+                    TÜBİTAK 2204 Yarışmaları için geliştirilmiştir.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Bağlantılar</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">Özellikler</a></li>
+                    <li><a href="#technology">Teknoloji</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Özellikler</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">RAG Sistemi</a></li>
+                    <li><a href="#features">Literatür Tarama</a></li>
+                    <li><a href="#features">Rapor Yazma</a></li>
+                    <li><a href="#features">Değerlendirme</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Teknolojiler</h4>
+                <ul class="footer-links">
+                    <li><a href="#technology">Google Gemini AI</a></li>
+                    <li><a href="#technology">LangChain RAG</a></li>
+                    <li><a href="#technology">ChromaDB</a></li>
+                    <li><a href="#technology">Crossref API</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BEYZA - TÜBİTAK 2204 Yapay Zeka Asistanı. Tüm hakları saklıdır.</p>
+            <p>TÜBİTAK 2204 Araştırma Projeleri Yarışmaları için geliştirilmiştir.</p>
+        </div>
+    </footer>
+
+    <!-- RAG Visualization Modal -->
+    <div class="rag-modal" id="ragModal">
+        <div class="rag-modal-overlay" id="ragModalOverlay"></div>
+        <div class="rag-modal-content">
+            <button class="rag-modal-close" id="ragModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            
+            <div class="rag-modal-header">
+                <h3 class="rag-modal-title">🔍 RAG Sistemi Nasıl Çalışır?</h3>
+                <p class="rag-modal-subtitle">BEYZA'nın sorunuzu nasıl işlediğini adım adım izleyin</p>
+            </div>
+            
+            <div class="rag-question-display" id="ragQuestion">
+                <div class="question-icon">💭</div>
+                <div class="question-text">Soru yükleniyor...</div>
+            </div>
+            
+            <div class="rag-pipeline">
+                <div class="rag-step" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📝</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Soru Alınıyor</h4>
+                        <p class="step-desc">Kullanıcı sorusu sisteme giriyor</p>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🎯</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Soru Sınıflandırılıyor</h4>
+                        <p class="step-desc">Fine-tuned BERT modeli soru tipini belirliyor</p>
+                        <div class="classification-result">
+                            <div class="classification-badge" id="classificationBadge"></div>
+                            <div class="classification-info" id="classificationInfo"></div>
+                        </div>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🧮</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Embedding Oluşturuluyor</h4>
+                        <p class="step-desc">Türkçe BERT modeli ile vektör dönüşümü</p>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🔍</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Vektör DB Araması</h4>
+                        <p class="step-desc">ChromaDB'de semantik arama yapılıyor</p>
+                        <div class="search-animation">
+                            <div class="search-beam"></div>
+                        </div>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="5">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">📚</div>
+                    <div class="step-content">
+                        <h4 class="step-title">İlgili Belgeler Bulundu</h4>
+                        <p class="step-desc">En alakalı 10 belge seçildi</p>
+                        <div class="documents-found">
+                            <div class="doc-item">📄 Şartname.pdf</div>
+                            <div class="doc-item">📄 Değerlendirme_Kriterleri.pdf</div>
+                            <div class="doc-item">📄 Başvuru_Rehberi.pdf</div>
+                        </div>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="6">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">💡</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Örnek Projeler Aranıyor</h4>
+                        <p class="step-desc">Dataset'ten benzer projeler bulunuyor</p>
+                        <div class="projects-found">
+                            <div class="project-item">🔬 Yapay Zeka ile Hastalık Tespiti</div>
+                            <div class="project-item">🌱 Akıllı Tarım Sistemi</div>
+                        </div>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="7">
+                    <div class="step-number">7</div>
+                    <div class="step-icon">📖</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Literatür Taranıyor</h4>
+                        <p class="step-desc">Crossref API'den akademik makaleler aranıyor</p>
+                        <div class="literature-found">
+                            <div class="lit-item">📑 DOI: 10.1234/example.2024</div>
+                            <div class="lit-item">📑 "Machine Learning in Healthcare"</div>
+                        </div>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="8">
+                    <div class="step-number">8</div>
+                    <div class="step-icon">🤖</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Gemini AI İşliyor</h4>
+                        <p class="step-desc">Tüm bağlam + Soru → Yanıt üretiliyor</p>
+                        <div class="ai-processing">
+                            <div class="processing-bar"></div>
+                        </div>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+                
+                <div class="pipeline-arrow">↓</div>
+                
+                <div class="rag-step" data-step="9">
+                    <div class="step-number">9</div>
+                    <div class="step-icon">✨</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Yanıt Hazır</h4>
+                        <p class="step-desc">Kaynak referanslarıyla birlikte sunuluyor</p>
+                    </div>
+                    <div class="step-status">⏳</div>
+                </div>
+            </div>
+            
+            <div class="rag-result" id="ragResult">
+                <div class="result-header">💬 BEYZA'nın Yanıtı:</div>
+                <div class="result-content" id="ragResultContent">İşlem tamamlanınca yanıt burada görünecek...</div>
+            </div>
+            
+            <div class="rag-actions">
+                <button class="btn btn-primary" id="ragRestart">🔄 Baştan İzle</button>
+                <button class="btn btn-secondary" id="ragClose">Kapat</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
