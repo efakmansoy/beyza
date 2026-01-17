@@ -9,7 +9,6 @@ const demoInput = document.getElementById('demoInput');
 const demoSend = document.getElementById('demoSend');
 const demoMessages = document.getElementById('demoMessages');
 
-// ========== Navbar Scroll Effect ==========
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
