@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEYZA - TÜBİTAK RAG Asistan</title>
-    <meta name="description" content="TÜBİTAK 2204 Yarışmaları için yapay zeka destekli proje asistanı">
+    <meta name="description" content="BEYZA - TÜBİTAK 2204 (A/B/C) Yarışmaları için Self-RAG + Hybrid Search teknolojileriyle geliştirilmiş yapay zeka asistanı. 8700+ örnek proje, 130M+ akademik makale, LangGraph orkestrasyon.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Floating particles background -->
@@ -43,13 +44,15 @@
                 Yapay Zeka ile Proje Geliştirme
             </div>
             <h1 class="hero-title">
-                <span class="gradient-text">TÜBİTAK 2204</span><br>
-                Yarışmaları Yapay Zeka Asistanı
+                <span class="gradient-text">Bilimsel Etkinlikler</span><br>
+                Yapay Zeka Asistanı
             </h1>
             <p class="hero-subtitle">
                 <strong>BEYZA</strong> (Bilimsel Etkinlikler Yapay Zeka Asistanı), 
-                TÜBİTAK 2204 yarışmalarında öğrencilere rehberlik eden, literatür tarayan 
-                ve profesyonel raporlar hazırlayan akıllı asistanınız.
+                tüm bilimsel proje yarışmalarında öğrencilere <strong>Self-RAG</strong> ve 
+                <strong>Hybrid Search</strong> teknolojileri ile rehberlik eden, 
+                8700+ başarılı proje veritabanından yararlanan ve profesyonel 
+                raporlar hazırlayan gelişmiş yapay zeka asistanınız.
             </p>
             <div class="hero-buttons">
                 <a href="#demo" class="btn btn-primary">
@@ -64,16 +67,16 @@
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
+                    <div class="stat-number" data-target="8700">0</div>
+                    <div class="stat-label">Örnek Proje</div>
+                </div>
+                <div class="stat-item">
                     <div class="stat-number" data-target="130">0</div>
                     <div class="stat-label">Milyon+ Makale</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-target="5">0</div>
-                    <div class="stat-label">Proje Aşaması</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="11">0</div>
-                    <div class="stat-label">Rapor Bölümü</div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Yarışma Desteği</div>
                 </div>
             </div>
         </div>
@@ -122,15 +125,16 @@
                         <path d="M20 5L25 15H35L27.5 21.5L30 32L20 25L10 32L12.5 21.5L5 15H15L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h3 class="feature-title">RAG Sistemi</h3>
+                <h3 class="feature-title">Self-RAG + Hybrid Search</h3>
                 <p class="feature-description">
-                    Retrieval-Augmented Generation teknolojisi ile akıllı bilgi erişimi. 
-                    ChromaDB vektör veritabanı ve Türkçe BERT modeli.
+                    LangGraph orkestrasyon ile Self-Reflective RAG. 
+                    Vector Search + BM25 + RRF + CrossEncoder Reranking.
+                    Gemini 2.5 Flash ile güçlendirilmiş.
                 </p>
                 <ul class="feature-list">
-                    <li>Semantik arama</li>
-                    <li>Kaynak takibi</li>
-                    <li>Streaming yanıt</li>
+                    <li>Hybrid retrieval (FINAL_K=12)</li>
+                    <li>CrossEncoder reranking (Top-8)</li>
+                    <li>History-aware classification</li>
                 </ul>
             </div>
 
@@ -195,15 +199,15 @@
                         <path d="M20 16V20L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <h3 class="feature-title">Multimodal Değerlendirme</h3>
+                <h3 class="feature-title">Çoklu Yarışma Desteği</h3>
                 <p class="feature-description">
-                    Gemini Vision API ile görsel içerik analizi. 
-                    Resim ve tabloları da değerlendirmeye dahil eder.
+                    Tüm bilimsel yarışmalar için özelleşmiş destek. 
+                    Dinamik yarışma yönetimi ve değerlendirme kriteri yükleme.
                 </p>
                 <ul class="feature-list">
-                    <li>Few-shot learning</li>
-                    <li>Görsel analiz</li>
-                    <li>Detaylı geri bildirim</li>
+                    <li>Multi-competition support</li>
+                    <li>Yarışmaya özel vektör DB</li>
+                    <li>Dinamik doküman yönetimi</li>
                 </ul>
             </div>
 
@@ -214,15 +218,15 @@
                         <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"/>
                     </svg>
                 </div>
-                <h3 class="feature-title">Gerçek Zamanlı İletişim</h3>
+                <h3 class="feature-title">8700+ Örnek Proje Veritabanı</h3>
                 <p class="feature-description">
-                    Socket.IO teknolojisi ile anlık mesajlaşma ve streaming 
-                    yanıtlar. Tüm güncellemeler gerçek zamanlı olarak iletilir.
+                    HuggingFace'ten yüklenen başarılı TÜBİTAK projeleri. 
+                    Fikir/değerlendirme sorularında otomatik örnek önerisi.
                 </p>
                 <ul class="feature-list">
-                    <li>Anlık mesajlaşma</li>
-                    <li>Canlı güncellemeler</li>
-                    <li>Oturum yönetimi</li>
+                    <li>Batched embedding (500/batch)</li>
+                    <li>Fallback mekanizması</li>
+                    <li>Otomatik setup</li>
                 </ul>
             </div>
         </div>
@@ -240,20 +244,32 @@
                 <h3 class="tech-category-title">🧠 AI & ML</h3>
                 <div class="tech-items">
                     <div class="tech-item">
-                        <span class="tech-name">Google Gemini 2.5</span>
-                        <span class="tech-desc">Dil Modeli</span>
+                        <span class="tech-name">Google Gemini 2.5 Flash</span>
+                        <span class="tech-desc">LLM (1M context)</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">LangGraph</span>
+                        <span class="tech-desc">Self-RAG Orchestration</span>
                     </div>
                     <div class="tech-item">
                         <span class="tech-name">LangChain</span>
                         <span class="tech-desc">RAG Framework</span>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-name">ChromaDB</span>
-                        <span class="tech-desc">Vektör DB</span>
+                        <span class="tech-name">Turkish BERT (emrecan)</span>
+                        <span class="tech-desc">768-dim Embedding</span>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-name">Sentence Transformers</span>
-                        <span class="tech-desc">Embedding</span>
+                        <span class="tech-name">CrossEncoder</span>
+                        <span class="tech-desc">MS MARCO Reranker</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">ChromaDB</span>
+                        <span class="tech-desc">Vector Store</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">BM25 + RRF</span>
+                        <span class="tech-desc">Hybrid Search</span>
                     </div>
                 </div>
             </div>
@@ -283,15 +299,15 @@
                 <div class="tech-items">
                     <div class="tech-item">
                         <span class="tech-name">Crossref API</span>
-                        <span class="tech-desc">Akademik DB</span>
+                        <span class="tech-desc">130M+ Papers</span>
                     </div>
                     <div class="tech-item">
-                        <span class="tech-name">BeautifulSoup</span>
-                        <span class="tech-desc">Web Scraping</span>
+                        <span class="tech-name">HuggingFace Datasets</span>
+                        <span class="tech-desc">8700+ Projects</span>
                     </div>
                     <div class="tech-item">
                         <span class="tech-name">python-docx</span>
-                        <span class="tech-desc">Export</span>
+                        <span class="tech-desc">DOCX Export</span>
                     </div>
                     <div class="tech-item">
                         <span class="tech-name">Jinja2</span>
@@ -301,7 +317,7 @@
             </div>
         </div>
         <div class="tech-architecture">
-            <h3 class="architecture-title">Sistem Mimarisi</h3>
+            <h3 class="architecture-title">Self-RAG Sistem Mimarisi</h3>
             <div class="architecture-flow">
                 <div class="flow-step">
                     <div class="flow-icon">👤</div>
@@ -309,28 +325,33 @@
                 </div>
                 <div class="flow-arrow">→</div>
                 <div class="flow-step">
-                    <div class="flow-icon">🌐</div>
-                    <div class="flow-label">Flask API</div>
+                    <div class="flow-icon">🎯</div>
+                    <div class="flow-label">Classification</div>
                 </div>
                 <div class="flow-arrow">→</div>
                 <div class="flow-step">
                     <div class="flow-icon">🔍</div>
-                    <div class="flow-label">RAG System</div>
+                    <div class="flow-label">Hybrid Search<br>(Vector+BM25)</div>
                 </div>
                 <div class="flow-arrow">→</div>
                 <div class="flow-step">
-                    <div class="flow-icon">🗄️</div>
-                    <div class="flow-label">Vector DB</div>
+                    <div class="flow-icon">📊</div>
+                    <div class="flow-label">RRF Fusion</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">🎯</div>
+                    <div class="flow-label">CrossEncoder<br>Rerank</div>
                 </div>
                 <div class="flow-arrow">→</div>
                 <div class="flow-step">
                     <div class="flow-icon">🤖</div>
-                    <div class="flow-label">Gemini AI</div>
+                    <div class="flow-label">Gemini 2.5<br>Flash</div>
                 </div>
                 <div class="flow-arrow">→</div>
                 <div class="flow-step">
                     <div class="flow-icon">💬</div>
-                    <div class="flow-label">Yanıt</div>
+                    <div class="flow-label">Streaming<br>Yanıt</div>
                 </div>
             </div>
         </div>
@@ -401,10 +422,10 @@
                     </div>
                 </div>
                 <div class="demo-feature-item">
-                    <div class="demo-feature-icon">🎯</div>
+                    <div class="demo-feature-icon">🗂️</div>
                     <div class="demo-feature-content">
-                        <h4>Değerlendirme</h4>
-                        <p>Projenizi puanlayın ve geri bildirim alın</p>
+                        <h4>8700+ Örnek Proje</h4>
+                        <p>Başarılı TÜBİTAK projelerinden örnekler görün</p>
                     </div>
                 </div>
             </div>
@@ -416,7 +437,7 @@
         <div class="contact-content">
             <h2 class="contact-title">Projenizi Bir Sonraki Seviyeye Taşıyın</h2>
             <p class="contact-subtitle">
-                BEYZA ile TÜBİTAK 2204 yarışmalarında başarılı olun. 
+                BEYZA ile proje yarışmalarında başarılı olun. 
                 Yapay zeka destekli asistanınız ile profesyonel sonuçlar elde edin.
             </p>
             <div class="contact-buttons">
@@ -437,8 +458,8 @@
                     <div class="stat-text">130M+ Akademik Makale</div>
                 </div>
                 <div class="contact-stat">
-                    <div class="stat-icon">📝</div>
-                    <div class="stat-text">Profesyonel Raporlama</div>
+                    <div class="stat-icon">�️</div>
+                    <div class="stat-text">8700+ Örnek Proje</div>
                 </div>
             </div>
         </div>
@@ -454,7 +475,7 @@
                 </div>
                 <p class="footer-desc">
                     Bilimsel Etkinlikler Yapay Zeka Asistanı<br>
-                    TÜBİTAK 2204 Yarışmaları için geliştirilmiştir.
+                    Tüm bilimsel yarışmalar için geliştirilmiştir.
                 </p>
             </div>
             <div class="footer-section">
@@ -477,16 +498,21 @@
             <div class="footer-section">
                 <h4 class="footer-title">Teknolojiler</h4>
                 <ul class="footer-links">
-                    <li><a href="#technology">Google Gemini AI</a></li>
-                    <li><a href="#technology">LangChain RAG</a></li>
-                    <li><a href="#technology">ChromaDB</a></li>
-                    <li><a href="#technology">Crossref API</a></li>
+                    <li><a href="#technology">Self-RAG + LangGraph</a></li>
+                    <li><a href="#technology">Hybrid Search (BM25+RRF)</a></li>
+                    <li><a href="#technology">Gemini 2.5 Flash</a></li>
+                    <li><a href="#technology">HuggingFace 8700+ Projects</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 BEYZA - TÜBİTAK 2204 Yapay Zeka Asistanı. Tüm hakları saklıdır.</p>
-            <p>TÜBİTAK 2204 Araştırma Projeleri Yarışmaları için geliştirilmiştir.</p>
+            <p class="mb-0">
+                <small>
+                    © 2026 Bilimsel Etkinlikler Yapay Zeka Asistanı (BEYZA)
+                    <br>
+                    <i class="fas fa-code me-1">Efe Deniz Akmansoy</i>
+                </small>
+            </p>
         </div>
     </footer>
 
@@ -501,8 +527,8 @@
             </button>
             
             <div class="rag-modal-header">
-                <h3 class="rag-modal-title">🔍 RAG Sistemi Nasıl Çalışır?</h3>
-                <p class="rag-modal-subtitle">BEYZA'nın sorunuzu nasıl işlediğini adım adım izleyin</p>
+                <h3 class="rag-modal-title">🔍 Self-RAG Sistemi Nasıl Çalışır?</h3>
+                <p class="rag-modal-subtitle">BEYZA'nın Hybrid Search + LangGraph orkestrasyon ile sorunuzu nasıl işlediğini adım adım izleyin</p>
             </div>
             
             <div class="rag-question-display" id="ragQuestion">
@@ -541,10 +567,10 @@
                 
                 <div class="rag-step" data-step="3">
                     <div class="step-number">3</div>
-                    <div class="step-icon">🧮</div>
+                    <div class="step-icon">🔍</div>
                     <div class="step-content">
-                        <h4 class="step-title">Embedding Oluşturuluyor</h4>
-                        <p class="step-desc">Türkçe BERT modeli ile vektör dönüşümü</p>
+                        <h4 class="step-title">Hybrid Search Başlıyor</h4>
+                        <p class="step-desc">Vector Search (K=20) + BM25 (K=20) paralel çalışıyor</p>
                     </div>
                     <div class="step-status">⏳</div>
                 </div>
@@ -553,10 +579,10 @@
                 
                 <div class="rag-step" data-step="4">
                     <div class="step-number">4</div>
-                    <div class="step-icon">🔍</div>
+                    <div class="step-icon">📊</div>
                     <div class="step-content">
-                        <h4 class="step-title">Vektör DB Araması</h4>
-                        <p class="step-desc">ChromaDB'de semantik arama yapılıyor</p>
+                        <h4 class="step-title">RRF Fusion (K=12)</h4>
+                        <p class="step-desc">Reciprocal Rank Fusion ile sonuçlar birleştiriliyor</p>
                         <div class="search-animation">
                             <div class="search-beam"></div>
                         </div>
@@ -568,14 +594,14 @@
                 
                 <div class="rag-step" data-step="5">
                     <div class="step-number">5</div>
-                    <div class="step-icon">📚</div>
+                    <div class="step-icon">🎯</div>
                     <div class="step-content">
-                        <h4 class="step-title">İlgili Belgeler Bulundu</h4>
-                        <p class="step-desc">En alakalı 10 belge seçildi</p>
+                        <h4 class="step-title">CrossEncoder Reranking</h4>
+                        <p class="step-desc">MS MARCO modeli ile Top-8 belge seçiliyor</p>
                         <div class="documents-found">
-                            <div class="doc-item">📄 Şartname.pdf</div>
-                            <div class="doc-item">📄 Değerlendirme_Kriterleri.pdf</div>
-                            <div class="doc-item">📄 Başvuru_Rehberi.pdf</div>
+                            <div class="doc-item">📄 Çağrı Metni (Skor: 0.95)</div>
+                            <div class="doc-item">📄 Proje Rehberi (Skor: 0.92)</div>
+                            <div class="doc-item">📄 Değerlendirme Kriterleri (Skor: 0.89)</div>
                         </div>
                     </div>
                     <div class="step-status">⏳</div>
@@ -585,13 +611,14 @@
                 
                 <div class="rag-step" data-step="6">
                     <div class="step-number">6</div>
-                    <div class="step-icon">💡</div>
+                    <div class="step-icon">�️</div>
                     <div class="step-content">
-                        <h4 class="step-title">Örnek Projeler Aranıyor</h4>
-                        <p class="step-desc">Dataset'ten benzer projeler bulunuyor</p>
+                        <h4 class="step-title">8700+ Örnek Proje Veritabanı</h4>
+                        <p class="step-desc">HuggingFace dataset'inden benzer başarılı projeler aranıyor</p>
                         <div class="projects-found">
-                            <div class="project-item">🔬 Yapay Zeka ile Hastalık Tespiti</div>
-                            <div class="project-item">🌱 Akıllı Tarım Sistemi</div>
+                            <div class="project-item">🔬 Yapay Zeka ile Hastalık Tespiti (2023)</div>
+                            <div class="project-item">🌱 IoT Tabanlı Akıllı Tarım (2022)</div>
+                            <div class="project-item">♻️ Geri Dönüşüm Optimizasyonu (2024)</div>
                         </div>
                     </div>
                     <div class="step-status">⏳</div>
@@ -603,11 +630,12 @@
                     <div class="step-number">7</div>
                     <div class="step-icon">📖</div>
                     <div class="step-content">
-                        <h4 class="step-title">Literatür Taranıyor</h4>
-                        <p class="step-desc">Crossref API'den akademik makaleler aranıyor</p>
+                        <h4 class="step-title">Crossref API - 130M+ Makale</h4>
+                        <p class="step-desc">Akademik literatürden DOI referanslı kaynaklar tarıyor</p>
                         <div class="literature-found">
                             <div class="lit-item">📑 DOI: 10.1234/example.2024</div>
-                            <div class="lit-item">📑 "Machine Learning in Healthcare"</div>
+                            <div class="lit-item">📑 "Deep Learning in Medical Diagnosis"</div>
+                            <div class="lit-item">📑 IEEE Transactions (2024) - 142 citations</div>
                         </div>
                     </div>
                     <div class="step-status">⏳</div>
@@ -619,8 +647,8 @@
                     <div class="step-number">8</div>
                     <div class="step-icon">🤖</div>
                     <div class="step-content">
-                        <h4 class="step-title">Gemini AI İşliyor</h4>
-                        <p class="step-desc">Tüm bağlam + Soru → Yanıt üretiliyor</p>
+                        <h4 class="step-title">Gemini 2.5 Flash (1M Context)</h4>
+                        <p class="step-desc">LangGraph Self-RAG workflow ile yanıt üretiliyor</p>
                         <div class="ai-processing">
                             <div class="processing-bar"></div>
                         </div>
